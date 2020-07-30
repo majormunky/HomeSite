@@ -1,0 +1,6 @@
+# Specify filepatterns you want git to ignore.
+
+.env/
+*.pyc
+*.sqlite3
+home_project/local_settings.py
