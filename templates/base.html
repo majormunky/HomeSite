@@ -39,9 +39,9 @@
 
 			<div class="nav-scroller py-1 mb-2">
 				<nav class="nav d-flex justify-content-left">
-					<a class="p-2 text-muted" href="#">Programming</a>
-					<a class="p-2 text-muted" href="#">Adventuring</a>
-					<a class="p-2 text-muted" href="#">Other Stuff</a>
+					{% for category in categories %}
+						<a class="p-2 text-muted" href="/c/{{category.slug}}/">{{category.name}}</a>
+					{% endfor %}
 				</nav>
 			</div>
 		</div>
