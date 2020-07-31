@@ -6,6 +6,10 @@ from django.conf import settings
 class BlogCategory(models.Model):
 	name = models.CharField(max_length=64)
 	slug = models.SlugField(max_length=64)
+	order = models.IntegerField()
+
+	def __str__(self):
+		return self.name
 
 
 class BlogPost(models.Model):
